@@ -23,7 +23,6 @@ PATH="$PATH:$HOME/go/bin/"
 
 # custom aliases
 alias bat="batcat"
-alias grep="rgrep"
 alias swu="sudo wg-quick up karpn"
 alias swd="sudo wg-quick down karpn"
 alias sau="sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean"
