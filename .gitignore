@@ -1,0 +1,14 @@
+*
+
+!.config
+!.config/alacritty
+!.config/alacritty/alacritty.toml
+
+!.gitconfig
+!.gitignore
+
+!.zshrc
+
+!install.sh
+
+!README.md
