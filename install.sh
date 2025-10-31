@@ -16,6 +16,7 @@ sudo apt install            \
     qbittorrent             \
     python3-pip             \
     python3-full            \
+    clang-format            \
     fonts-jetbrains-mono    \
 
 pipx install conan
