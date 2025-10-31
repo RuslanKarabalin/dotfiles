@@ -1,15 +1,21 @@
 #! /bin/bash
 
-sudo apt install \
-    bat \
-    git \
-    vlc \
-    htop \
-    tmux \
-    tree \
-    neovim \
-    ripgrep \
-    bashtop \
-    alacritty \
-    qbittorrent \
-    fonts-jetbrains-mono \
+sudo apt install            \
+    bat                     \
+    git                     \
+    vlc                     \
+    pipx                    \
+    htop                    \
+    tmux                    \
+    tree                    \
+    cmake                   \
+    neovim                  \
+    ripgrep                 \
+    bashtop                 \
+    alacritty               \
+    qbittorrent             \
+    python3-pip             \
+    python3-full            \
+    fonts-jetbrains-mono    \
+
+pipx install conan

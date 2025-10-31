@@ -19,7 +19,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # PATH additions
-PATH="$PATH:$HOME/go/bin/"
+export PATH="$PATH:$HOME/go/bin/"
+export PATH="$PATH:/home/ruska/.local/bin"
 
 # custom aliases
 alias bat="batcat"
