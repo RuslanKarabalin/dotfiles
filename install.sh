@@ -9,6 +9,7 @@ sudo apt install            \
     tmux                    \
     tree                    \
     cmake                   \
+    golang                  \
     neovim                  \
     ripgrep                 \
     bashtop                 \
