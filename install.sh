@@ -21,3 +21,6 @@ sudo apt install            \
     fonts-jetbrains-mono    \
 
 pipx install conan
+
+go install github.com/go-delve/delve/cmd/dlv@master
+go install golang.org/x/tools/gopls@latest
