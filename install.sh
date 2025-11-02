@@ -3,6 +3,7 @@
 sudo apt install            \
     bat                     \
     git                     \
+    npm                     \
     vlc                     \
     pipx                    \
     htop                    \
