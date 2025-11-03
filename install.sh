@@ -1,10 +1,10 @@
 #! /bin/bash
 
-sudo apt -y update          &&
-    sudo apt -y upgrade     &&
-    sudo apt -y autoremove  &&
-    sudo apt -y autoclean   &&
-    sudo apt -y clean all
+sudo apt -y update
+sudo apt -y upgrade
+sudo apt -y autoremove
+sudo apt -y autoclean
+sudo apt -y clean all
 
 sudo apt install            \
     bat                     \
