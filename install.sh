@@ -1,5 +1,7 @@
 #! /bin/bash
 
+sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean && sudo apt clean all
+
 sudo apt install            \
     bat                     \
     git                     \
@@ -12,6 +14,7 @@ sudo apt install            \
     cmake                   \
     golang                  \
     neovim                  \
+    doxygen                 \
     ripgrep                 \
     bashtop                 \
     alacritty               \
