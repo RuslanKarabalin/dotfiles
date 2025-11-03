@@ -23,5 +23,7 @@ sudo apt install            \
 
 pipx install conan
 
-go install github.com/go-delve/delve/cmd/dlv@master
+npm install @anthropic-ai/claude-code
+
 go install golang.org/x/tools/gopls@latest
+go install github.com/go-delve/delve/cmd/dlv@master
