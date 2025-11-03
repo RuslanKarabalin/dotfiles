@@ -1,6 +1,10 @@
 #! /bin/bash
 
-sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean && sudo apt clean all
+sudo apt -y update          &&
+    sudo apt -y upgrade     &&
+    sudo apt -y autoremove  &&
+    sudo apt -y autoclean   &&
+    sudo apt -y clean all
 
 sudo apt install            \
     bat                     \
@@ -22,7 +26,7 @@ sudo apt install            \
     python3-pip             \
     python3-full            \
     clang-format            \
-    fonts-jetbrains-mono    \
+    fonts-jetbrains-mono
 
 pipx install conan
 

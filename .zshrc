@@ -26,5 +26,14 @@ export PATH="$PATH:/home/ruska/.local/bin"
 alias bat="batcat"
 alias swu="sudo wg-quick up karpn"
 alias swd="sudo wg-quick down karpn"
-alias sau="sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean && sudo apt clean all"
+alias sau="
+    sudo apt update     &&
+    sudo apt upgrade    &&
+    sudo apt autoremove &&
+    sudo apt autoclean  &&
+    sudo apt clean all  &&
+    pipx upgrade-all
+    npm update
+    omz update
+"
 alias claude="/home/ruska/.claude/local/claude"
