@@ -8,6 +8,8 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     mvn
+    pip
+    npm
     tmux
     golang
     gradle
@@ -23,9 +25,9 @@ export PATH="$PATH:$HOME/go/bin/"
 export PATH="$PATH:/home/ruska/.local/bin"
 
 # custom aliases
-alias bat="batcat"
 alias swu="sudo wg-quick up karpn"
 alias swd="sudo wg-quick down karpn"
+alias claude="/home/ruska/.claude/local/claude"
 alias sau="
     sudo apt update
     sudo apt upgrade
@@ -36,4 +38,3 @@ alias sau="
     npm update
     omz update
 "
-alias claude="/home/ruska/.claude/local/claude"
