@@ -29,12 +29,14 @@ alias swu="sudo wg-quick up karpn"
 alias swd="sudo wg-quick down karpn"
 alias claude="/home/ruska/.claude/local/claude"
 alias sau="
-    sudo apt update
-    sudo apt upgrade
-    sudo apt autoremove
-    sudo apt autoclean
-    sudo apt clean all
+    sudo apt -y update
+    sudo apt -y upgrade
+    sudo apt -y autoremove
+    sudo apt -y autoclean
+    sudo apt -y clean all
+    sudo snap refresh
+    snap refresh --list
     pipx upgrade-all
-    npm update
+    npm update -y 
     omz update
 "
