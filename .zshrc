@@ -22,7 +22,8 @@ source $ZSH/oh-my-zsh.sh
 
 # PATH additions
 export PATH="$PATH:$HOME/go/bin/"
-export PATH="$PATH:/home/ruska/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin/"
+export PATH="$PATH:/home/ruska/.local/bin/"
 
 # custom aliases
 alias swu="sudo wg-quick up karpn"
@@ -36,6 +37,7 @@ alias sau="
     sudo apt -y clean all
     sudo snap refresh
     snap refresh --list
+    rustup update
     pipx upgrade-all
     npm update -y 
     omz update

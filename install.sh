@@ -28,6 +28,8 @@ sudo apt install            \
     clang-format            \
     fonts-jetbrains-mono
 
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -y
+
 pipx install conan
 
 npm install @anthropic-ai/claude-code
