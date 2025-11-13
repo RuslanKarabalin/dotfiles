@@ -28,7 +28,7 @@ export PATH="$PATH:/home/ruska/.local/bin/"
 # custom aliases
 alias swu="sudo wg-quick up karpn"
 alias swd="sudo wg-quick down karpn"
-alias claude="/home/ruska/.claude/local/claude"
+
 alias sau="
     sudo apt -y update
     sudo apt -y upgrade
@@ -37,8 +37,6 @@ alias sau="
     sudo apt -y clean all
     sudo snap refresh
     snap refresh --list
-    rustup update
-    pipx upgrade-all
-    npm update -y 
+    sudo npm update -y 
     omz update
 "
