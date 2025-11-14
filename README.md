@@ -28,17 +28,13 @@ sudo apt install -y         \
     fonts-jetbrains-mono
 ```
 
-**Install OMZ:**
+**Install OMZ:** <https://github.com/ohmyzsh/ohmyzsh>
 
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+**Install zsh-autosuggestions:** <https://github.com/zsh-users/zsh-autosuggestions>
 
-**Install zsh-autosuggestions:**
+**Install VSCode:** <https://code.visualstudio.com>
 
-```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
+**Install Google Chrome:** <https://www.google.com/chrome>
 
 **Install Claude Code:** <https://code.claude.com/docs/en/setup>
 
