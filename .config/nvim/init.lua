@@ -16,14 +16,6 @@ vim.opt.undofile = true
 vim.opt.shell = "/bin/bash"
 vim.opt.swapfile = false
 
--- Mouse
-vim.opt.mouse = "a"
-vim.opt.mousefocus = true
-
--- Line Numbers
-vim.opt.number = true
-vim.opt.relativenumber = true
-
 -- Splits
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -41,30 +33,9 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.smartindent = true
 
-
-
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
-
--- empty setup using defaults
-require("nvim-tree").setup()
-
--- OR setup with some options
-require("nvim-tree").setup({
-  sort = {
-    sorter = "case_sensitive",
-  },
-  view = {
-    width = 30,
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
-})
