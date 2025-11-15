@@ -1,14 +1,16 @@
 *
 
 !.config
+
 !.config/alacritty
 !.config/alacritty/alacritty.toml
+
+!.config/nvim
+!.config/nvim/init.lua
 
 !.gitconfig
 !.gitignore
 
 !.zshrc
-
-!install.sh
 
 !README.md
