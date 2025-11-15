@@ -13,7 +13,7 @@ vim.opt.wrap = false
 vim.wo.linebreak = true
 vim.opt.virtualedit = "block"
 vim.opt.undofile = true
-vim.opt.shell = "/bin/bash"
+vim.opt.shell = "/bin/zsh"
 vim.opt.swapfile = false
 
 -- Splits
@@ -27,15 +27,13 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.shortmess:append("c")
 
 -- Indent Settings
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
+vim.opt.expandtab = true
 vim.opt.smartindent = true
 
--- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- optionally enable 24-bit colour
 vim.opt.termguicolors = true

@@ -13,7 +13,6 @@ return {
         return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
       end
 
-      -- default mappings
       api.config.mappings.default_on_attach(bufnr)
     end
 
@@ -21,7 +20,6 @@ return {
       on_attach = my_on_attach
     }
 
-    -- Global keybinding to toggle nvim-tree
     vim.keymap.set("n", "<C-b>", "<cmd>NvimTreeToggle<cr>", { desc = "Toggle nvim-tree", noremap = true, silent = true })
   end,
 }
