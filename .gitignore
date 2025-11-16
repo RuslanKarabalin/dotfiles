@@ -7,11 +7,11 @@
 
 !.config/nvim
 !.config/nvim/init.lua
-!.config/nvim/lua
-!.config/nvim/lua/config
-!.config/nvim/lua/config/lazy.lua
-!.config/nvim/lua/plugins
-!.config/nvim/lua/plugins/tree.lua
+!.config/nvim/lua/settings.lua
+!.config/nvim/lua/config/completion.lua
+!.config/nvim/lua/config/lsp.lua
+!.config/nvim/lua/config/tree.lua
+!.config/nvim/lua/config/treesitter.lua
 
 !.gitconfig
 !.gitignore
