@@ -7,7 +7,9 @@
 
 !.config/nvim
 !.config/nvim/init.lua
+!.config/nvim/lua
 !.config/nvim/lua/settings.lua
+!.config/nvim/lua/config
 !.config/nvim/lua/config/completion.lua
 !.config/nvim/lua/config/lsp.lua
 !.config/nvim/lua/config/tree.lua

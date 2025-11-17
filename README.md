@@ -28,14 +28,18 @@ sudo apt install -y         \
     fonts-jetbrains-mono
 ```
 
+**Install VSCode:** <https://code.visualstudio.com>
+
 **Install OMZ:** <https://github.com/ohmyzsh/ohmyzsh>
 
-**Install zsh-autosuggestions:** <https://github.com/zsh-users/zsh-autosuggestions>
+**Install Neovim:** <https://github.com/neovim/neovim>
 
-**Install VSCode:** <https://code.visualstudio.com>
+**Install Rust:** <https://rust-lang.org/tools/install>
 
 **Install Google Chrome:** <https://www.google.com/chrome>
 
+**Install Alacritty:** <https://github.com/alacritty/alacritty>
+
 **Install Claude Code:** <https://code.claude.com/docs/en/setup>
 
-**Install Rust:** <https://rust-lang.org/tools/install>
+**Install zsh-autosuggestions:** <https://github.com/zsh-users/zsh-autosuggestions>
