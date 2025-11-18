@@ -20,4 +20,12 @@ vim.lsp.config('clangd', {
     capabilities = capabilities,
 })
 
+vim.lsp.config('gopls', {
+    cmd = { 'gopls' },
+    filetypes = { 'go' },
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
 vim.lsp.enable('clangd')
+vim.lsp.enable('gopls')
