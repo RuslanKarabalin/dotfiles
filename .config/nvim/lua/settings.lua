@@ -35,3 +35,5 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 vim.cmd.colorscheme('gruvbox-material')
 vim.opt.background = 'dark'
+
+vim.opt.hlsearch = false
