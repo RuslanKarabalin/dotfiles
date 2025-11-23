@@ -11,9 +11,11 @@ plugins=(
     pip
     npm
     tmux
+    rust
     golang
     gradle
     ubuntu
+    archlinux
     zsh-autosuggestions
 )
 
@@ -26,13 +28,3 @@ export PATH="$PATH:$HOME/go/bin/"
 # custom aliases
 alias swu="sudo wg-quick up karpn"
 alias swd="sudo wg-quick down karpn"
-
-sau() {
-    sudo apt -y update
-    sudo apt -y upgrade
-    sudo apt -y autoremove
-    sudo apt -y autoclean
-    sudo apt clean
-    sudo snap refresh
-    snap refresh --list
-}

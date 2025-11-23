@@ -22,6 +22,8 @@
 !.gitconfig
 !.gitignore
 
+!.uup.sh
+
 !.zshrc
 
 !README.md
