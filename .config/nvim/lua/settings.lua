@@ -32,6 +32,9 @@ vim.opt.smartindent = true
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.opt.colorcolumn = "80,120"
+vim.cmd [[highlight ColorColumn ctermbg=lightgrey guibg=lightgrey]]
+
 vim.opt.termguicolors = true
 vim.cmd.colorscheme('gruvbox-material')
 vim.opt.background = 'dark'
