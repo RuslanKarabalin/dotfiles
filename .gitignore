@@ -19,6 +19,9 @@
 !.config/nvim/lua/config/tree.lua
 !.config/nvim/lua/config/treesitter.lua
 
+!.config/clangd
+!.config/clangd/config.yaml
+
 !.gitconfig
 !.gitignore
 
