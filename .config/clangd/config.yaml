@@ -3,8 +3,9 @@ If:
 CompileFlags:
   Add: [-std=c17]
 
+---
+
 If:
   PathMatch: [.*\.cpp$, .*\.cc$, .*\.cxx$]
 CompileFlags:
   Add: [-std=c++23]
-

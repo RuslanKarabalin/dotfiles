@@ -20,6 +20,13 @@ vim.lsp.config('clangd', {
     capabilities = capabilities,
 })
 
+vim.lsp.config('rust_analyzer', {
+    cmd = { 'rust-analyzer' },
+    filetypes = { 'rust' },
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
 vim.lsp.config('gopls', {
     cmd = { 'gopls' },
     filetypes = { 'go' },
@@ -28,4 +35,5 @@ vim.lsp.config('gopls', {
 })
 
 vim.lsp.enable('clangd')
+vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('gopls')
