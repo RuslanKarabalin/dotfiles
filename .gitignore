@@ -22,6 +22,9 @@
 !.config/clangd
 !.config/clangd/config.yaml
 
+!.config/tmux
+!.config/tmux/tmux.conf
+
 !.gitconfig
 !.gitignore
 
