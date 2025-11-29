@@ -18,6 +18,8 @@
 
 **Install Claude Code:** <https://code.claude.com/docs/en/setup>
 
+**Install Hyprland:** <https://hypr.land>
+
 ## Arch
 
 **Update base setup:**
