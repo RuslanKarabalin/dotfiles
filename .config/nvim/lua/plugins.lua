@@ -3,7 +3,6 @@ vim.pack.add({
     { src = 'https://github.com/hrsh7th/nvim-cmp' },
     { src = 'https://github.com/L3MON4D3/LuaSnip' },
     { src = 'https://github.com/hrsh7th/cmp-nvim-lsp' },
-    { src = 'https://github.com/neovim/nvim-lspconfig' },
     { src = 'https://github.com/nvim-tree/nvim-tree.lua' },
     { src = 'https://github.com/nvim-tree/nvim-web-devicons' },
     {
