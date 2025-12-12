@@ -1,6 +1,11 @@
+If:
+  PathMatch: \.c$
 CompileFlags:
   Add:
+    - "-std=c23"
+---
+If:
+  PathMatch: \.(cpp|hpp)$
+CompileFlags: 
+  Add:
     - "-std=c++23"
-    - "-I."
-    - "-I./include"
-    - "-I./src"
