@@ -11,10 +11,11 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.background = 'dark'
 vim.opt.termguicolors = true
 vim.cmd.colorscheme('gruvbox-material')
 
 vim.opt.colorcolumn = "80,120"
-vim.cmd [[highlight ColorColumn ctermbg=lightgrey guibg=lightgrey]]
+vim.cmd.highlight("ColorColumn", "ctermbg=lightgrey", "guibg=lightgrey")
