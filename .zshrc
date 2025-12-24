@@ -7,13 +7,9 @@ ZSH_THEME="robbyrussell"
 # plugins
 plugins=(
     git
-    mvn
-    pip
-    npm
     tmux
     rust
     golang
-    gradle
     ubuntu
     archlinux
     zsh-autosuggestions
