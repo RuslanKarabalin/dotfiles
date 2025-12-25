@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sudo pacman -Syu
+yay -Syu
+yay -Rsn $(yay -Qdtq)

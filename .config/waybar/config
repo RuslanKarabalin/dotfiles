@@ -1,0 +1,74 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/keybinds", "hyprland/language", "backlight", "pulseaudio", "cpu", "memory", "battery", "tray", "custom/power"],
+
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "format": "{name}",
+        "on-click": "activate"
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-ru": "RU"
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{:%d.%m.%Y %H:%M:%S}",
+        "interval": 1
+    },
+
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "tooltip": true,
+        "interval": 2
+    },
+
+    "memory": {
+        "format": "RAM: {percentage}% Used: {used:0.1f}G / {total:0.1f}G"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "BAT: {capacity}% Avg: {time}",
+        "format-charging": "CHG: {capacity}%",
+        "format-plugged": "PLUG: {capacity}%"
+    },
+
+    "pulseaudio": {
+        "format": "VOL: {volume}%",
+        "format-muted": "MUTE",
+        "on-click": "pavucontrol",
+        "scroll-step": 5
+    },
+
+    "backlight": {
+        "device": "amdgpu_bl2",
+        "format": "BRI: {percent}%"
+    },
+
+    "custom/keybinds": {
+        "format": "KEYS",
+        "on-click": "~/.config/hypr/keybinds.sh",
+    },
+
+    "custom/power": {
+        "format": "POWER",
+        "on-click": "~/.config/hypr/power.sh",
+    }
+}
