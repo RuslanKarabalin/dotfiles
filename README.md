@@ -4,6 +4,8 @@
 
 ```bash
 systemctl enable --user ssh-agent.service
+systemctl start --user ssh-agent.service
+ssh-add .ssh/id_ed25519
 ```
 
 ## Base apps
