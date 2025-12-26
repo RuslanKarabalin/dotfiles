@@ -29,7 +29,8 @@
 !.config/clangd/config.yaml
 
 !.config/systemd
-!.config/systemd/ssh-agent.service
+!.config/systemd/user
+!.config/systemd/user/ssh-agent.service
 
 !.config/tmux
 !.config/tmux/tmux.conf
