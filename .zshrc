@@ -22,9 +22,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
-# SSH agent
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-
 # custom aliases
 alias swu="sudo wg-quick up karpn"
 alias swd="sudo wg-quick down karpn"
