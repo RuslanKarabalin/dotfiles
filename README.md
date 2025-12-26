@@ -1,5 +1,11 @@
 # dotfiles
 
+## OpenSSH key agent setup
+
+```bash
+systemctl enable --user ssh-agent.service
+```
+
 ## Base apps
 
 **Install Google Chrome:** <https://www.google.com/chrome>
@@ -28,48 +34,10 @@
 ./aup.sh
 ```
 
-**Install base apps:**
-
-```bash
-sudo pacman -Syu            \
-    bat                     \
-    git                     \
-    mpv                     \
-    htop                    \
-    tmux                    \
-    tree                    \
-    golang                  \
-    neovim                  \
-    ripgrep                 \
-    bashtop                 \
-    alacritty               \
-    qbittorrent             \
-    ttf-jetbrains-mono
-```
-
 ## Ubuntu
 
 **Update base setup:**
 
 ```bash
 ./uup.sh
-```
-
-**Install base apps:**
-
-```bash
-sudo apt install -y         \
-    bat                     \
-    git                     \
-    mpv                     \
-    htop                    \
-    tmux                    \
-    tree                    \
-    golang                  \
-    neovim                  \
-    ripgrep                 \
-    bashtop                 \
-    alacritty               \
-    qbittorrent             \
-    fonts-jetbrains-mono
 ```
