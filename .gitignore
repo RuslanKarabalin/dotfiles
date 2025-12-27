@@ -30,6 +30,7 @@
 
 !.config/systemd
 !.config/systemd/user
+!.config/systemd/.gitkeep
 !.config/systemd/user/ssh-agent.service
 
 !.config/tmux
