@@ -45,7 +45,6 @@
 !.gitconfig
 !.gitignore
 
-!.zprofile
 !.zshrc
 
 !aup.sh
