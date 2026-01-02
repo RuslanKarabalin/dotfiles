@@ -1,4 +1,4 @@
 #!/bin/bash
 
-yay -Syu
+yay -Syyyuuu
 yay -Rsn $(yay -Qdtq)
