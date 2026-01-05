@@ -8,8 +8,6 @@
 !.config/hypr
 !.config/hypr/hyprland.conf
 !.config/hypr/hyprlock.conf
-!.config/hypr/keybinds.sh
-!.config/hypr/power.sh
 
 !.config/nvim
 !.config/nvim/init.lua
@@ -19,22 +17,7 @@
 !.config/nvim/lua/settings.lua
 
 !.config/nvim/lua/config
-!.config/nvim/lua/config/completion.lua
-!.config/nvim/lua/config/lsp.lua
-!.config/nvim/lua/config/telescope.lua
 !.config/nvim/lua/config/tree.lua
-!.config/nvim/lua/config/treesitter.lua
-
-!.config/clangd
-!.config/clangd/config.yaml
-
-!.config/systemd
-!.config/systemd/user
-!.config/systemd/.gitkeep
-!.config/systemd/user/ssh-agent.service
-
-!.config/tmux
-!.config/tmux/tmux.conf
 
 !.config/waybar
 !.config/waybar/config
@@ -48,6 +31,5 @@
 !.zshrc
 
 !aup.sh
-!uup.sh
 
 !README.md
