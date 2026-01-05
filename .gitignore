@@ -17,6 +17,7 @@
 !.config/nvim/lua/settings.lua
 
 !.config/nvim/lua/config
+!.config/nvim/lua/config/noice.lua
 !.config/nvim/lua/config/tree.lua
 
 !.config/waybar
