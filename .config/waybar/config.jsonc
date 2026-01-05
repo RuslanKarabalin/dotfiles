@@ -1,0 +1,71 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["hyprland/language", "backlight", "pulseaudio", "cpu", "memory", "battery", "tray"],
+
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "format": "{name}",
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        }
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-ru": "RU"
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{:%H:%M:%S %d.%m.%Y}",
+        "interval": 1
+    },
+
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "tooltip": true,
+        "interval": 2
+    },
+
+    "memory": {
+        "format": "RAM: {used:0.1f}G / {total:0.1f}G"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "BAT: {capacity}%",
+        "format-charging": "CHG: {capacity}%",
+        "format-plugged": "PLUG: {capacity}%",
+        "format-alt": "Avg: {time}"
+    },
+
+    "pulseaudio": {
+        "format": "VOL: {volume}%",
+        "format-muted": "MUTE",
+        "on-click": "pavucontrol",
+        "scroll-step": 5
+    },
+
+    "backlight": {
+        "device": "amdgpu_bl2",
+        "format": "BRI: {percent}%"
+    }
+}

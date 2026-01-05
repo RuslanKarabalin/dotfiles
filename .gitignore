@@ -20,7 +20,7 @@
 !.config/nvim/lua/config/tree.lua
 
 !.config/waybar
-!.config/waybar/config
+!.config/waybar/config.jsonc
 
 !.config/wofi
 !.config/wofi/config
