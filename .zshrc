@@ -10,6 +10,7 @@ plugins=(
     tmux
     rust
     golang
+    docker
     archlinux
     zsh-autosuggestions
 )
@@ -22,7 +23,7 @@ export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 # custom aliases
-alias aup="yay -Syyyuuu && yay -Rsn $(yay -Qdtq)"
+alias aup="yay -Syu && yay -Rsn $(yay -Qdtq)"
 
 alias swu="sudo wg-quick up karpn"
 alias swd="sudo wg-quick down karpn"
