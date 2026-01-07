@@ -23,7 +23,16 @@ export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 # custom aliases
-alias aup="yay -Syu && yay -Rsn $(yay -Qdtq)"
+aup() {
+  yay -Syu || return
+  local -a orphans
+  orphans=($(yay -Qdtq))
+  if (( ${#orphans} )); then
+    yay -Rsn -- "${orphans[@]}"
+  else
+    printf '\e[1m%s\e[0m\n' ":: No orphan packages to remove..."
+  fi
+}
 
 alias swu="sudo wg-quick up karpn"
 alias swd="sudo wg-quick down karpn"
