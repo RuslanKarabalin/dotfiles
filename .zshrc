@@ -33,6 +33,3 @@ aup() {
     printf '\e[1m%s\e[0m\n' ":: No orphan packages to remove..."
   fi
 }
-
-alias swu="sudo wg-quick up karpn"
-alias swd="sudo wg-quick down karpn"
