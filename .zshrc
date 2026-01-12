@@ -24,12 +24,13 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # custom aliases
 aup() {
-  yay -Syu || return
-  local -a orphans
-  orphans=($(yay -Qdtq))
-  if (( ${#orphans} )); then
-    yay -Rsn -- "${orphans[@]}"
-  else
-    printf '\e[1m%s\e[0m\n' ":: No orphan packages to remove..."
-  fi
+    sudo pacman -Syyyuuu || return
+    yay -Syu || return
+    local -a orphans
+    orphans=($(yay -Qdtq))
+    if (( ${#orphans} )); then
+        yay -Rsn -- "${orphans[@]}"
+    else
+        printf '\e[1m%s\e[0m\n' ":: No orphan packages to remove..."
+    fi
 }
