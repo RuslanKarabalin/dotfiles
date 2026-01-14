@@ -24,13 +24,21 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # custom aliases
 aup() {
+    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO sudo pacman -Syyyuuu"
     sudo pacman -Syyyuuu || return
+    
+    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO yay -Syu"
     yay -Syu || return
+    
+    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO flatpak update -y"
+    flatpak update -y || return
+
     local -a orphans
     orphans=($(yay -Qdtq))
     if (( ${#orphans} )); then
+        printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO yay -Rsn -- \"${orphans[@]}\""
         yay -Rsn -- "${orphans[@]}"
     else
-        printf '\e[1m%s\e[0m\n' ":: No orphan packages to remove..."
+        printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO No orphan packages to remove"
     fi
 }
