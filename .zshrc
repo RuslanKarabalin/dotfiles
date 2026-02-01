@@ -24,6 +24,9 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # custom aliases
 aup() {
+    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO omz update"
+    omz update || return
+
     printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO sudo pacman -Syyyuuu"
     sudo pacman -Syyyuuu || return
     
