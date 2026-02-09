@@ -1,37 +1,8 @@
 *
 
-!.config
-
-!.config/alacritty
-!.config/alacritty/alacritty.toml
-
-!.config/hypr
-!.config/hypr/hyprland.conf
-!.config/hypr/hyprlock.conf
-
-!.config/nvim
-!.config/nvim/init.lua
-
-!.config/nvim/lua
-!.config/nvim/lua/plugins.lua
-!.config/nvim/lua/settings.lua
-
-!.config/nvim/lua/config
-!.config/nvim/lua/config/noice.lua
-!.config/nvim/lua/config/telescope.lua
-!.config/nvim/lua/config/tree.lua
-
-!.config/waybar
-!.config/waybar/config.jsonc
-
-!.config/wofi
-!.config/wofi/config
-
 !.gitconfig
 !.gitignore
 
 !.zshrc
-
-!aup.sh
 
 !README.md

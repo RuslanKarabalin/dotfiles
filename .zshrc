@@ -23,25 +23,13 @@ export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 # custom aliases
+alias swu="sudo wg-quick up karpn"
+alias swd="sudo wg-quick down karpn"
+
 aup() {
     printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO omz update"
     omz update || return
 
-    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO sudo pacman -Syyyuuu"
-    sudo pacman -Syyyuuu || return
-    
-    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO yay -Syu"
-    yay -Syu || return
-    
-    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO flatpak update -y"
-    flatpak update -y || return
-
-    local -a orphans
-    orphans=($(yay -Qdtq))
-    if (( ${#orphans} )); then
-        printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO yay -Rsn -- \"${orphans[@]}\""
-        yay -Rsn -- "${orphans[@]}"
-    else
-        printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO No orphan packages to remove"
-    fi
+    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO brew update --force && brew upgrade && brew upgrade --cask && brew cleanup && brew doctor"
+    brew update --force && brew upgrade && brew upgrade --cask && brew cleanup && brew doctor || return
 }
