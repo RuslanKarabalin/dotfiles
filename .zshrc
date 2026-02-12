@@ -8,10 +8,11 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     tmux
+    brew
     rust
+    macos
     golang
     docker
-    archlinux
     zsh-autosuggestions
 )
 
