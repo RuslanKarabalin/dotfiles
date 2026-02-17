@@ -1,29 +1,18 @@
-# omz
 export ZSH="$HOME/.oh-my-zsh"
 
-# zsh theme
 ZSH_THEME="robbyrussell"
 
-# plugins
 plugins=(
     git
-    tmux
-    brew
-    rust
-    macos
-    golang
-    docker
     zsh-autosuggestions
 )
 
-# zsh initialize script
 source $ZSH/oh-my-zsh.sh
 
-# PATH additions
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 
-# custom aliases
 aup() {
     printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO omz update"
     omz update || return
