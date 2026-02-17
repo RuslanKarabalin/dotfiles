@@ -24,9 +24,6 @@ export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 # custom aliases
-alias swu="sudo wg-quick up karpn"
-alias swd="sudo wg-quick down karpn"
-
 aup() {
     printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO omz update"
     omz update || return
