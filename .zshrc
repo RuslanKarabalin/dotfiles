@@ -14,9 +14,9 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 
 aup() {
-    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO omz update"
+    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO Updating oh my zsh"
     omz update || return
 
-    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO brew update --force && brew upgrade && brew upgrade --cask && brew cleanup && brew doctor"
-    brew update --force && brew upgrade && brew upgrade --cask && brew cleanup && brew doctor || return
+    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO Updating brew packages"
+    brew update --force && brew outdated && brew upgrade && brew upgrade --cask && brew cleanup && brew doctor || return
 }
