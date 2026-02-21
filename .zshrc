@@ -18,5 +18,5 @@ aup() {
     omz update || return
 
     printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO Updating brew packages"
-    brew update --force && brew outdated && brew upgrade && brew upgrade --cask && brew cleanup && brew doctor || return
+    brew update && brew upgrade --greedy && brew autoremove && brew cleanup --prune=all -s && brew doctor || return
 }
