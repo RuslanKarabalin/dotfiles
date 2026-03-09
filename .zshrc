@@ -11,15 +11,30 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.cargo/bin"
+
+log() {
+    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO $*"
+}
 
 aup() {
-    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO Updating oh my zsh"
-    omz update || return
+    log "Updating oh my zsh"
+    omz update ||
+    return
 
-    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO Updating brew packages"
-    brew update && brew upgrade --greedy && brew autoremove && brew cleanup --prune=all -s && brew doctor || return
+    log "Updating brew packages"
+    brew update &&
+    brew upgrade --greedy &&
+    brew autoremove &&
+    brew cleanup --prune=all -s &&
+    brew doctor ||
+    return
+}
+
+aupc() {
+    aup
     
-    printf '\e[1m%s\e[0m\n' "$(date '+%Y-%m-%d %H:%M:%S') INFO Updating brew packages"
-    claude update && claude doctor
+    log "Updating claude"
+    claude update &&
+    claude doctor ||
+    return
 }
