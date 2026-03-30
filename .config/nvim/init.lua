@@ -36,3 +36,9 @@ vim.opt.termguicolors = true
 
 vim.g.netrw_liststyle = 3
 vim.g.netrw_banner = 0
+
+vim.pack.add({
+    { src = 'https://github.com/sainnhe/gruvbox-material' },
+})
+
+vim.cmd.colorscheme('gruvbox-material')
