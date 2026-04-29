@@ -1,8 +1,12 @@
 *
 
 !.config
+
 !.config/nvim
 !.config/nvim/init.lua
+
+!.config/iterm2
+!.config/iterm2/gruvbox.itermcolors
 
 !.gitconfig
 !.gitignore
