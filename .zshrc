@@ -21,16 +21,14 @@ log() {
 
 aup() {
     log "Updating oh my zsh"
-    omz update ||
-    return
+    omz update
 
     log "Updating brew packages"
     brew update &&
     brew upgrade --greedy &&
     brew autoremove &&
     brew cleanup --prune=all -s &&
-    brew doctor ||
-    return
+    brew doctor
 }
 
 aupc() {
@@ -38,6 +36,5 @@ aupc() {
     
     log "Updating claude"
     claude update &&
-    claude doctor ||
-    return
+    claude doctor
 }
