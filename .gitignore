@@ -5,8 +5,8 @@
 !.config/nvim
 !.config/nvim/init.lua
 
-!.config/iterm2
-!.config/iterm2/gruvbox.itermcolors
+!.config/ghostty
+!.config/ghostty/config
 
 !.gitconfig
 !.gitignore
