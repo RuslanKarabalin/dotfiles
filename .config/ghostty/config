@@ -19,3 +19,5 @@ foreground = #d4be98
 cursor-color = #d4be98
 selection-background = #3c3836
 selection-foreground = #d4be98
+
+font-feature = -calt, -liga, -dlig
