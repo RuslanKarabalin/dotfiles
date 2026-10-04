@@ -1,5 +1,5 @@
+term = xterm-256color
+
 theme = Gruvbox Material Dark
 
 font-feature = -calt, -liga, -dlig
-
-shell-integration-features = ssh-env, ssh-terminfo
