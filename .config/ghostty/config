@@ -3,3 +3,5 @@ term = xterm-256color
 theme = Gruvbox Material Dark
 
 font-feature = -calt, -liga, -dlig
+
+tab-inherit-working-directory = false
