@@ -33,4 +33,20 @@ aupc() {
     claude update
 }
 
+setupbrew() {
+    brew bundle --file ~/.config/brew/Brewfile
+}
+
+setupvscode() {
+    ~/.config/vscode/setup.sh
+}
+
+updevstack() {
+    docker compose -f ~/.config/devstack/compose.yaml up -d -V --wait
+}
+
+downdevstack() {
+    docker compose -f ~/.config/devstack/compose.yaml down -v
+}
+
 eval "$(mise activate zsh)"
