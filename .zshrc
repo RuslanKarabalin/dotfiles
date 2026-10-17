@@ -32,3 +32,5 @@ aupc() {
     
     claude update
 }
+
+eval "$(mise activate zsh)"
