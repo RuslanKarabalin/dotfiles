@@ -4,19 +4,10 @@
 !.claude/CLAUDE.md
 
 !.config
-!.config/brew
-!.config/brew/Brewfile
-!.config/devstack
-!.config/devstack/compose.yaml
 !.config/ghostty
 !.config/ghostty/config
 !.config/nvim
 !.config/nvim/init.lua
-!.config/vscode
-!.config/vscode/clean.sh
-!.config/vscode/setup.sh
-!.config/vscode/settings.json
-!.config/vscode/extensions.txt
 
 !.gitconfig
 !.gitignore

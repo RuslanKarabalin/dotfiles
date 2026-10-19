@@ -20,33 +20,12 @@ export NVM_DIR="$HOME/.nvm"
 aup() {
     omz update
 
-    brew update &&
-    brew upgrade --greedy &&
-    brew autoremove &&
-    brew cleanup --prune=all -s &&
+    brew update
+    brew upgrade --greedy
+    brew autoremove
+    brew cleanup --prune=all -s
     brew doctor
-}
-
-aupc() {
-    aup
-    
     claude update
-}
-
-setupbrew() {
-    brew bundle --file ~/.config/brew/Brewfile
-}
-
-setupvscode() {
-    ~/.config/vscode/setup.sh
-}
-
-updevstack() {
-    docker compose -f ~/.config/devstack/compose.yaml up -d -V --wait
-}
-
-downdevstack() {
-    docker compose -f ~/.config/devstack/compose.yaml down -v
 }
 
 eval "$(mise activate zsh)"
