@@ -11,6 +11,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/env"
 export PATH="$PATH:$HOME/.docker/bin"
 
 export NVM_DIR="$HOME/.nvm"
@@ -26,6 +27,7 @@ aup() {
     brew cleanup --prune=all -s
     brew doctor
     claude update
+    rustup update
 }
 
 eval "$(mise activate zsh)"
