@@ -76,6 +76,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.api.nvim_create_autocmd("TextYankPost", {
   callback = function()
-    vim.highlight.on_yank({ timeout = 200 })
+    vim.hi.on_yank({ timeout = 200 })
   end,
 })
