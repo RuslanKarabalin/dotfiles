@@ -12,6 +12,7 @@
 !.gitconfig
 !.gitignore
 
+!.zprofile
 !.zshrc
 
 !README.md
