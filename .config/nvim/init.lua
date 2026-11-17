@@ -1,81 +1,83 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+local opt = vim.opt
+local map = vim.keymap.set
+
+opt.number = true
+opt.relativenumber = true
+opt.signcolumn = "yes"
+opt.cursorline = true
+opt.colorcolumn = "80,120"
+opt.termguicolors = true
+opt.background = "dark"
+opt.winborder = "rounded"
+
+opt.wrap = false
+opt.scrolloff = 7
+opt.sidescrolloff = 5
+opt.splitbelow = true
+opt.splitright = true
+opt.splitkeep = "screen"
+opt.mouse = ""
+
+opt.ignorecase = true
+opt.smartcase = true
+opt.incsearch = true
+opt.hlsearch = false
+opt.inccommand = "split"
+
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.softtabstop = 4
+opt.expandtab = true
+opt.smartindent = true
+
+opt.virtualedit = "block"
+opt.completeopt = { "menuone", "noselect", "popup" }
+opt.clipboard = "unnamedplus"
+opt.confirm = true
+
+opt.undofile = true
+opt.swapfile = false
+opt.updatetime = 250
+opt.shortmess:append("c")
+
 vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
 
 vim.g.gruvbox_material_background = "medium"
 vim.g.gruvbox_material_better_performance = 1
 
-vim.wo.number = true
-vim.wo.linebreak = true
-vim.wo.signcolumn = "yes"
-vim.wo.relativenumber = true
-
-vim.opt.mouse = ""
-
-vim.opt.smartcase = true
-vim.opt.incsearch = true
-vim.opt.ignorecase = true
-
-vim.opt.inccommand = "split"
-
-vim.opt.cursorline = true
-
-vim.opt.completeopt = { "menu", "menuone", "noselect" }
-
-vim.opt.hlsearch = false
-vim.opt.colorcolumn = "80,120"
-
-vim.opt.splitbelow = true
-vim.opt.splitright = true
-
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4
-vim.opt.expandtab = true
-vim.opt.smartindent = true
-
-vim.opt.wrap = false
-vim.opt.scrolloff = 7
-vim.opt.virtualedit = "block"
-
-vim.opt.formatoptions = "qrn1"
-
-vim.opt.updatetime = 100
-vim.opt.shortmess:append("c")
-
-vim.opt.undofile = true
-vim.opt.swapfile = false
-
-vim.opt.shell = "/bin/zsh"
-vim.opt.clipboard = "unnamedplus"
-
-vim.opt.background = 'dark'
-vim.opt.termguicolors = true
-
 vim.pack.add({
-    { src = 'https://github.com/sainnhe/gruvbox-material' },
+    { src = "https://github.com/sainnhe/gruvbox-material" },
 })
 
-vim.cmd.colorscheme('gruvbox-material')
-vim.cmd.highlight("ColorColumn", "ctermbg=lightgrey", "guibg=lightgrey")
+vim.cmd.colorscheme("gruvbox-material")
+vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#45403d" })
 
-vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
-vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to lower window" })
-vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to upper window" })
-vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
+map("n", "<C-h>", "<C-w>h", { desc = "Window left" })
+map("n", "<C-j>", "<C-w>j", { desc = "Window down" })
+map("n", "<C-k>", "<C-w>k", { desc = "Window up" })
+map("n", "<C-l>", "<C-w>l", { desc = "Window right" })
 
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+map("n", "n", "nzzzv")
+map("n", "N", "Nzzzv")
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+map("x", "J", ":m '>+1<CR>gv=gv")
+map("x", "K", ":m '<-2<CR>gv=gv")
+
+map("n", "<leader>w", "<cmd>write<CR>", { desc = "Save file" })
+map("n", "<leader>x", "<cmd>x<CR>", { desc = "Save file and exit" })
+map("n", "<leader>e", "<cmd>Explore<CR>", { desc = "File explorer" })
+
+local highlight_yank = vim.hl.hl_op or vim.hl.on_yank
 
 vim.api.nvim_create_autocmd("TextYankPost", {
-  callback = function()
-    vim.hi.on_yank({ timeout = 200 })
-  end,
+    desc = "Highlight yanked text",
+    callback = function()
+        highlight_yank({ higroup = "Visual", timeout = 150 })
+    end,
 })
