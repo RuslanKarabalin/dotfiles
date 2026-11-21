@@ -1,9 +1,5 @@
 *
 
-!.claude
-!.claude/CLAUDE.md
-!.claude/settings.json
-
 !.config
 !.config/ghostty
 !.config/ghostty/config
@@ -16,4 +12,5 @@
 !.zprofile
 !.zshrc
 
+!AGENTS.md
 !README.md

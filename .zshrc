@@ -23,7 +23,5 @@ aup() {
     brew cleanup --prune=all -s
     brew doctor
 
-    claude update
-
     rustup update
 }
